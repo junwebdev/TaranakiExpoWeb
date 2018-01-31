@@ -138,6 +138,14 @@ figure {
   }
 }
 .fh5co-cover .desc {
+  top: 50%;
+  position: absolute;
+  width: 100%;
+  margin-top: -80px;
+  z-index: 2;
+  color: #fff;
+}
+.fh5co-cover .title {
   top: 35%;
   position: absolute;
   width: 100%;
@@ -151,12 +159,40 @@ figure {
     padding-right: 15px;
   }
 }
+.fh5co-cover .title h1 {
+  color: #5a5a5a;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 35px;
+  margin-bottom: 10px;
+  font-weight: 400  !important;
+}
+@media screen and (max-width: 768px) {
+  .fh5co-cover .title h1 {
+    font-size: 20px;
+  }
+}
+
 .fh5co-cover .desc h2 {
   color: #fff;
   text-transform: uppercase;
   font-size: 70px;
   margin-bottom: 10px;
   font-weight: 300 !important;
+}
+
+
+.fh5co-cover .title h2 {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 70px;
+  margin-bottom: 10px;
+  font-weight: 300 !important;
+}
+
+@media screen and (max-width: 768px) {
+  .fh5co-cover .title h2 {
+    font-size: 40px;
+  }
 }
 .fh5co-cover .desc h2 strong {
   font-weight: 700;
@@ -538,6 +574,7 @@ figure {
   background: #66D37E;
   padding: 40px 20px 20px 20px;
   margin-bottom: 30px;
+  min-height:400px;
 }
 .services span {
   margin-bottom: 30px;
@@ -1060,7 +1097,7 @@ figure {
 }
 
 #footer {
-  background: #ffffff;
+  background: rgba(0, 0, 0, 0.04);
   padding: 60px 0 40px;
 }
 #footer p {
