@@ -110,8 +110,12 @@ figure {
   bottom: 0;
   right: 0;
   z-index: 1;
-  background: rgba(66, 64, 64, 0.9);
-  background: rgba(0, 0, 0, 0.8);
+  /*new background with opacity*/
+  background-image:url(images/home.jpg);
+  background-repeat:no-repeat;
+  opacity: 0.3;
+  /*background: rgba(66, 64, 64, 0.9);
+  background: rgba(0, 0, 0, 0.8);*/
 }
 
 .fh5co-cover {
@@ -160,7 +164,7 @@ figure {
   }
 }
 .fh5co-cover .title h1 {
-  color: #5a5a5a;
+  color: #ffffff;
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 35px;
   margin-bottom: 10px;
@@ -330,12 +334,13 @@ figure {
 
 #fh5co-header-section {
   padding: 0;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 2;
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  background-color:#231717;
 }
 
 .nav-header {
