@@ -24,14 +24,27 @@
 // Place any jQuery/helper plugins in here.
 
 //CountDown settings
+
 var d = new Date();
-d.setDate(d.getDate() + 15);
+d.setFullYear(2018);
+d.setMonth(4);
+d.setDate(12);
 var year = d.getFullYear();
-var month = d.getMonth() + 1;
+var month = d.getMonth();
 var day = d.getDate();
 var date = month + '/' + day + '/' + year;
+//alert(date);
+
+//d.setDate(d.getDate() + 15);
+//var year = d.getFullYear();
+//var month = d.getMonth() + 1;
+//var day = d.getDate();
+//var date = month + '/' + day + '/' + year;
+//alert(date);
+
+
 $('#kareeb_countdown').countdown({
-date:  date + ' 23:59:59'//Here you can change countdown time
+date:  date + ' 19:59:59'//Here you can change countdown time
 }, function () {
   alert('Here we go!');
 });
